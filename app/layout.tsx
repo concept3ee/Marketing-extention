@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import HeroFooter from "@/components/footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const bricolage_Grotesque = Bricolage_Grotesque({
+  variable: "--font-bricolage-grotesque",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+ 
+
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,9 +26,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${bricolage_Grotesque.variable} antialiased`}
       >
+        <Navbar />
         {children}
+        <footer>
+        <HeroFooter backgroundUrl="/footer.avif" />
+        </footer>
       </body>
     </html>
   );
