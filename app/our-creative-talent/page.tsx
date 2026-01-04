@@ -1,6 +1,8 @@
+import ExpertiseSplit from "@/components/expertise-pill";
 import GlobalTeamHero from "@/components/global-team-hero";
 import ProcessSection from "@/components/process-section";
 import ProofTiles from "@/components/proof-tiles";
+import TeamSpotlightTabs from "@/components/spot-light-tab";
 import { TeamMember, TeamMemberCard } from "@/components/team-members";
 
 const members: TeamMember[] = [
@@ -73,8 +75,60 @@ const CreativeTalent = () => {
           ))}
         </div>
         <div className="w-full px-16 py-8 flex flex-col gap-3">
-        <GlobalTeamHero backgroundSrc="/world-class.avif " />
-        <ProcessSection />
+          <GlobalTeamHero backgroundSrc="/world-class.avif " />
+          <ProcessSection />
+        </div>
+      </div>
+      <div className="w-full px-16 py-8 flex flex-col gap-3 bg-white">
+        <ExpertiseSplit
+          reverse={false}
+          kicker="FULL-STACK EXPERTISE"
+          title="Collaborate with brilliant people"
+          italicTitle="across every discipline"
+          videoSrc="/videos/another.mp4"
+        />
+        <ExpertiseSplit
+          reverse={true}
+          kicker="FULL-STACK EXPERTISE"
+          title="Collaborate with brilliant people"
+          italicTitle="across every discipline"
+          posterSrc="/agent.avif"
+        />
+        <ExpertiseSplit
+          reverse={false}
+          kicker="FULL-STACK EXPERTISE"
+          title="Collaborate with brilliant people"
+          italicTitle="across every discipline"
+          posterSrc="/agent.avif"
+        />
+        <div className="pt-12">
+          <h3 className="text-black/80 text-[15px] font-medium text-center">
+            creative showcase
+          </h3>
+          <p className="text-black text-[25px] font-medium text-center">
+            The people behind the work
+          </p>
+        </div>
+
+        <TeamSpotlightTabs />
+        <div
+          className="p-20 rounded-[20px]"
+          style={{
+            backgroundImage: "url(/bg-image.avif)",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <p className="text-white text-[15px] font-medium">
+            ai design services
+          </p>
+          <p className="text-white text-[30px] font-medium ">
+            Save up to 70% on production costs
+          </p>
+          <p className="text-white text-[16px] font-medium my-3">Through AI, customers like Amazon, Reddit, and Salesforce managed to spend less<br/> than half of what they normally would on similar projects.</p>
+          <button className="border cursor-pointer border-white p-1 text-[10px] rounded-[20px] w-[90px] text-center whitespace-nowrap">
+           Book a demo
+          </button>
         </div>
       </div>
     </div>
