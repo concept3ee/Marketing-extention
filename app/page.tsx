@@ -108,7 +108,7 @@ export default function Home() {
           backgroundPosition: "left",
         }}
       >
-        <section className=" px-10 flex justify-between">
+        <section className=" px-10 flex justify-between pb-12">
           <div className="flex flex-col item-center">
             <p className="text-[#080d10] text-[20px] font-medium ">
               Product Design and Development Agency

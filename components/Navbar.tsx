@@ -75,7 +75,7 @@ export default function Navbar() {
                 isDropdownOpen ? "text-black" : "text-white"
               }`}
             >
-              phenomenon
+              Marketing Extension
             </span>
           </div>
 

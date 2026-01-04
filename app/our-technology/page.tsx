@@ -12,7 +12,7 @@ const OurTechnology = () => {
             <p className='text-black/90 text-center text-[16px] font-medium'>We use the latest and greatest technology to power your<br/> creative edge. We are constantly updating our<br/> technology to stay ahead of the curve.</p>
            <div className="p-20 ">
            <video
-              src="/videos/another.mp4"
+              src="/slack.mp4"
               className='w-full h-full object-cover rounded'
               controls
               preload="metadata"
@@ -52,7 +52,7 @@ const OurTechnology = () => {
           kicker="FULL-STACK EXPERTISE"
           title="Collaborate with brilliant people"
           italicTitle="across every discipline"
-          videoSrc="/videos/another.mp4"
+          videoSrc="/slack.mp4"
         />
         <ExpertiseSplit
           reverse={true}
