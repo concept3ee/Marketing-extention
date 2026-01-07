@@ -12,39 +12,39 @@ type Card = {
 
 const cards: Card[] = [
   {
-    title: "Reddit",
-    subtitle: "Motion Design, Social Media Creative",
-    img: "/reddit.avif",
-    size: "sm",
-  },
-  {
-    title: "Pernod Ricard",
-    subtitle: "eBook & Digital Reports, Video Production",
-    img: "/pernord-richard.avif",
-    size: "sm",
-  },
-  {
-    title: "Porter",
-    subtitle: "Motion Design, Illustration Design, Video Production",
-    img: "/forter.avif",
+    title: "Zone",
+    subtitle: "Africa's First Regulated Blockchain Payment Network - Full marketing operating system, group restructuring, rebrand, flagship narratives",
+    img: "https://picsum.photos/seed/zone/800/600",
     size: "lg",
   },
   {
-    title: "Amazon Pharmacy",
-    subtitle: "Ad Creative, Social Media Creative",
-    img: "/amazon.avif",
+    title: "Smartcomply Group",
+    subtitle: "From Fragmented Socials to Group-Wide Engine - Multi-brand ecosystem transformation, refreshed brand architectures, end-to-end marketing delivery",
+    img: "https://picsum.photos/seed/smartcomply/800/600",
     size: "md",
   },
   {
-    title: "Bolt",
-    subtitle: "Motion Design, Illustration Design",
-    img: "https://cdn.sanity.io/files/k0dlbavy/production/9ef48fc5551e1e172ceca6555ce758868360a4e4.mp4",
+    title: "SabiTrack",
+    subtitle: "Investor-Ready Marketing Foundations - Six-month blueprint, embedded Head of Marketing, ongoing advisory",
+    img: "https://picsum.photos/seed/sabitrack/800/600",
     size: "sm",
   },
   {
-    title: "Thomson Reuters",
-    subtitle: "Video Production",
-    img: "/reuters.avif",
+    title: "Quidax",
+    subtitle: "Turning Crypto into a Pop-Culture Movement - 360° campaign (#TheQuidaxCall), operating rhythms, hero campaigns, six-figure sign-ups",
+    img: "https://picsum.photos/seed/quidax/800/600",
+    size: "md",
+  },
+  {
+    title: "VeryPay",
+    subtitle: "Multi-Country Marketing Bench - Marketing operations across Uganda, Zimbabwe, South Africa, and Nigeria",
+    img: "https://picsum.photos/seed/verypay/800/600",
+    size: "sm",
+  },
+  {
+    title: "Tamy Consulting",
+    subtitle: "Giving a Strong Operator a Voice - Coherent digital presence, content pillars, social engine, thought leadership",
+    img: "https://picsum.photos/seed/tamy/800/600",
     size: "sm",
   },
 ];

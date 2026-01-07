@@ -10,6 +10,23 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-bricolage-grotesque);
   --font-mono: var(--font-geist-mono);
+  
+  /* Custom Colors */
+  --color-primary: #FF6B3D;
+  --color-primary-soft: #FFE4D8;
+  --color-bg-dark: #05060A;
+  --color-bg-light: #FFFFFF;
+  --color-bg-gray: #F5F5F7;
+  --color-text-dark: #0B0D17;
+  --color-text-muted: #6B7280;
+  
+  /* Font Families */
+  --font-family-sans: 'Albert Sans', sans-serif;
+  --font-family-display: 'Bricolage Grotesque', sans-serif;
+  
+  /* Border Radius */
+  --radius-lg: 24px;
+  --radius-md: 12px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,9 +37,23 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-bricolage-grotesque), ui-sans-serif, system-ui, sans-serif;
+  font-family: 'Albert Sans', sans-serif;
+  background-color: #FFFFFF;
+  color: #0B0D17;
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 
@@ -79,5 +110,70 @@ body {
   to {
     width: calc(var(--chars) * 1ch);
   }
+}
+
+@keyframes scramble {
+  0% { 
+    opacity: 0; 
+    transform: translateY(10px); 
+  }
+  100% { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+.animate-scramble {
+  animation: scramble 0.5s ease-out forwards;
+}
+
+.clipped-bottom {
+  clip-path: ellipse(150% 100% at 50% 0%);
+}
+
+.clipped-top {
+  clip-path: ellipse(150% 100% at 50% 100%);
+}
+
+/* Fade in animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.animation-delay-100 {
+  animation-delay: 0.1s;
+}
+
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animation-delay-300 {
+  animation-delay: 0.3s;
 }
 

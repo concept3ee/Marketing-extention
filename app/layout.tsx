@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import HeaderWrapper from "@/components/header-wrapper";
 import HeroFooter from "@/components/footer";
 
 const bricolage_Grotesque = Bricolage_Grotesque({
@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${bricolage_Grotesque.variable} antialiased`}
       >
-        <Navbar />
+        <HeaderWrapper />
         {children}
         <footer>
         <HeroFooter backgroundUrl="/footer.avif" />

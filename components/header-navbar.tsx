@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronRight, Menu, X, ArrowRight, ExternalLink } from 'lucide-react';
 
@@ -67,19 +68,33 @@ const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage }) => {
                 className="relative py-2"
                 onMouseEnter={() => !item.noMega && setActiveMenu(item.id)}
               >
-                <button className={`flex items-center gap-1 font-semibold text-sm transition-colors duration-300 ${
-                  activeMenu === item.id ? 'text-primary' : textColor
-                } hover:text-primary`}>
-                  {item.label}
-                  {!item.noMega && (
-                    <motion.span 
-                      animate={{ rotate: activeMenu === item.id ? 180 : 0 }}
-                      className="ml-0.5 opacity-50"
-                    >
-                      <ChevronRight size={14} className="rotate-90" />
-                    </motion.span>
-                  )}
-                </button>
+                {item.id === 'cases' ? (
+                  <Link href="/pricing" className={`flex items-center gap-1 font-semibold text-sm transition-colors duration-300 ${
+                    activeMenu === item.id ? 'text-primary' : textColor
+                  } hover:text-primary`}>
+                    {item.label}
+                  </Link>
+                ) : item.id === 'insights' ? (
+                  <Link href="/blog" className={`flex items-center gap-1 font-semibold text-sm transition-colors duration-300 ${
+                    activeMenu === item.id ? 'text-primary' : textColor
+                  } hover:text-primary`}>
+                    {item.label}
+                  </Link>
+                ) : (
+                  <button className={`flex items-center gap-1 font-semibold text-sm transition-colors duration-300 ${
+                    activeMenu === item.id ? 'text-primary' : textColor
+                  } hover:text-primary`}>
+                    {item.label}
+                    {!item.noMega && (
+                      <motion.span 
+                        animate={{ rotate: activeMenu === item.id ? 180 : 0 }}
+                        className="ml-0.5 opacity-50"
+                      >
+                        <ChevronRight size={14} className="rotate-90" />
+                      </motion.span>
+                    )}
+                  </button>
+                )}
               </div>
             ))}
           </nav>
@@ -116,7 +131,7 @@ const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage }) => {
               <div className="container mx-auto px-6 max-w-7xl py-12">
                 {activeMenu === 'services' && <ServicesMega />}
                 {activeMenu === 'industries' && <IndustriesMega />}
-                {activeMenu === 'why-us' && <WhyUsMega onNavigate={handleNavClick} />}
+                {activeMenu === 'why-us' && <WhyUsMega />}
                 {activeMenu === 'resources' && <ResourcesMega />}
               </div>
             </motion.div>
@@ -147,9 +162,19 @@ const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage }) => {
           >
              <div className="flex flex-col gap-6">
                 {menuItems.map(item => (
-                   <button key={item.id} className="text-2xl font-display font-bold text-left border-b border-gray-100 pb-4 flex items-center justify-between">
-                      {item.label} <ChevronRight size={20} className="text-primary" />
-                   </button>
+                   item.id === 'cases' ? (
+                     <Link key={item.id} href="/pricing" className="text-2xl font-display font-bold text-left border-b border-gray-100 pb-4 flex items-center justify-between">
+                        {item.label} <ChevronRight size={20} className="text-primary" />
+                     </Link>
+                   ) : item.id === 'insights' ? (
+                     <Link key={item.id} href="/blog" className="text-2xl font-display font-bold text-left border-b border-gray-100 pb-4 flex items-center justify-between">
+                        {item.label} <ChevronRight size={20} className="text-primary" />
+                     </Link>
+                   ) : (
+                     <button key={item.id} className="text-2xl font-display font-bold text-left border-b border-gray-100 pb-4 flex items-center justify-between">
+                        {item.label} <ChevronRight size={20} className="text-primary" />
+                     </button>
+                   )
                 ))}
                 <button onClick={() => handleNavClick('technology')} className="text-2xl font-display font-bold text-left text-primary flex items-center justify-between">
                    Our Technology <ArrowRight size={20} />
@@ -239,7 +264,7 @@ const IndustriesMega = () => {
           <p className="text-sm text-text-muted leading-relaxed">Marketing Extension helps B2B and tech brands turn complexity into momentum.</p>
         </div>
         <button className="bg-primary text-white py-3 rounded-full font-bold flex items-center justify-center gap-2 hover:bg-text-dark transition-all">
-          Let's talk <ArrowRight size={16} />
+          Let&apos;s talk <ArrowRight size={16} />
         </button>
       </div>
 
@@ -262,19 +287,19 @@ const IndustriesMega = () => {
   );
 };
 
-const WhyUsMega = ({ onNavigate }: { onNavigate: (page: 'home' | 'technology') => void }) => {
+const WhyUsMega = () => {
   const cards = [
-    { id: 'talent', title: 'Our strategic talent', desc: 'A distributed team of senior strategists and specialists plugged directly into your roadmap.', img: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=600' },
-    { id: 'ai', title: 'AI + Human excellence', desc: 'We combine human creativity with AI discipline to move faster—from insight to campaign.', img: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=600' },
-    { id: 'technology', title: 'Our technology', desc: 'A lightweight operating system for marketing: shared workspaces and playbooks built around your stack.', img: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=600' },
+    { id: 'talent', title: 'Our strategic talent', desc: 'A distributed team of senior strategists and specialists plugged directly into your roadmap.', img: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=600',href: '/our-creative-talent' },
+    { id: 'ai', title: 'AI + Human excellence', desc: 'We combine human creativity with AI discipline to move faster—from insight to campaign.', img: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=600',href: '/ai-excellence' },
+    { id: 'technology', title: 'Our technology', desc: 'A lightweight operating system for marketing: shared workspaces and playbooks built around your stack.', img: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=600',href: '/our-technology' },
   ];
 
   return (
     <div className="grid grid-cols-3 gap-6">
       {cards.map(card => (
-        <button 
+        <Link 
           key={card.id} 
-          onClick={() => card.id === 'technology' && onNavigate('technology')}
+          href={card.href}
           className="group text-left flex flex-col overflow-hidden rounded-[32px] border border-gray-100 hover:border-primary/20 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
         >
           <div className="aspect-[16/10] overflow-hidden">
@@ -285,7 +310,7 @@ const WhyUsMega = ({ onNavigate }: { onNavigate: (page: 'home' | 'technology') =
             <p className="text-sm text-text-muted leading-relaxed">{card.desc}</p>
             <span className="mt-6 text-xs font-bold uppercase text-primary inline-flex items-center gap-2">Learn more <ArrowRight size={14} /></span>
           </div>
-        </button>
+        </Link>
       ))}
     </div>
   );
@@ -293,11 +318,11 @@ const WhyUsMega = ({ onNavigate }: { onNavigate: (page: 'home' | 'technology') =
 
 const ResourcesMega = () => {
   const items = [
-    { label: 'Learning Center', desc: 'Live sessions with operators', icon: true },
-    { label: 'Guides', desc: 'Playbooks from leaders' },
-    { label: 'Reports', desc: 'Data for smarter decisions' },
-    { label: 'Video Library', desc: 'Deep dives and breakdowns' },
-    { label: 'Playbooks', desc: 'Hands-on frameworks' },
+    { label: 'Learning Center', desc: 'Live sessions with operators', icon: true, href: '/learning-center' },
+    { label: 'Guides', desc: 'Playbooks from leaders', href: '/guides' },
+    { label: 'Reports', desc: 'Data for smarter decisions', href: '/reports' },
+    { label: 'Video Library', desc: 'Deep dives and breakdowns', href: '/video' },
+    { label: 'Playbooks', desc: 'Hands-on frameworks', href: '/playbook' },
   ];
 
   return (
@@ -309,12 +334,12 @@ const ResourcesMega = () => {
         <ul className="flex flex-col gap-6">
           {items.map(item => (
             <li key={item.label}>
-              <a href="#" className="group block">
+              <Link href={item.href || '#'} className="group block">
                 <p className="text-lg font-bold text-text-dark group-hover:text-primary transition-colors flex items-center justify-between">
                   {item.label} {item.icon && <span className="text-[10px]">↗</span>}
                 </p>
                 <p className="text-xs text-text-muted">{item.desc}</p>
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

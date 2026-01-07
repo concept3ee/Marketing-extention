@@ -86,7 +86,7 @@ export default function AiAdvantageSplit({
 }: Props) {
   return (
     <section className={["w-full bg-[#dfdec9]", className].join(" ")}>
-      <div className="mx-auto max-w-6xl">
+      <div className="w-full">
         <div
           className={[
             "grid items-stretch gap-10 lg:grid-cols-2",
