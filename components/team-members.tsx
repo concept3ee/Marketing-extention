@@ -27,7 +27,7 @@ export function TeamMemberCard({ member, className = "" }: Props) {
       ].join(" ")}
     >
       {/* Image */}
-      <div className="relative aspect-square w-full overflow-hidden rounded-lg bg-white/5">
+      <div className="relative aspect-square w-full overflow-hidden rounded bg-white/5">
         {src ? (
           <Image
             src={src}

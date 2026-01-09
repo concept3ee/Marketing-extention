@@ -10,13 +10,13 @@ import TrustedByMarquee from "@/components/trusted-by"
 const OurTechnology = () => {
   return (
     <div className='bg-white h-full pt-20 flex flex-col gap-5'>
-        <div className='space-y-6 pt-12 px-8 max-w-4xl mx-auto'>
-            <h1 className='text-black/80 text-[15px] font-medium text-center uppercase tracking-widest'>Our Technology</h1>
+        <div className='space-y-6 pt-12 px-8 w-full'>
+            <h1 className='text-black/80 text-[15px] font-medium text-center uppercase tracking-widest  font-inter-tight'>Our Technology</h1>
             <p className='text-black/80 text-[30px] md:text-4xl text-center font-display font-bold leading-tight'>The Systems Powering Your Creative Edge</p>
             <p className='text-black/90 text-center text-[16px] md:text-lg font-medium leading-relaxed'>Our technology connects people, processes, and creativity into a fully measurable marketing engine.</p>
             
             {/* Capabilities Section */}
-            <div className="py-12">
+            {/* <div className="py-12">
               <h2 className="text-black/80 text-[15px] font-medium text-center uppercase tracking-widest mb-12">Capabilities</h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
@@ -48,15 +48,16 @@ const OurTechnology = () => {
                   );
                 })}
               </div>
-            </div>
+            </div> */}
 
-           <div className="p-20 ">
+           <div className="px-12 py-7 ">
            <video
               src="/slack.mp4"
-              className='w-full h-full object-cover rounded'
+              className='w-full h-[400px] object-cover  rounded'
               controls
               preload="metadata"
               loop
+              height={400}
             />
            </div>
            <TrustedByMarquee/>
@@ -88,7 +89,7 @@ const OurTechnology = () => {
       />
        <div className="w-full px-16 py-8 flex flex-col gap-3 bg-white">
         {/* How Tech Supports Your Marketing Engine */}
-        <div className="max-w-5xl mx-auto py-16">
+        {/* <div className="max-w-5xl mx-auto py-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -127,70 +128,13 @@ const OurTechnology = () => {
               );
             })}
           </div>
-        </div>
+        </div> */}
 
         {/* Why Choose Marketing Extension */}
-        <div className="max-w-6xl mx-auto py-16">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="text-black/80 text-[30px] md:text-4xl font-display font-bold text-center mb-12"
-          >
-            Why Choose Marketing Extension?
-          </motion.h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {[
-              { icon: Users, text: "Embedded leadership & execution—you co-own outcomes" },
-              { icon: Bot, text: "AI-driven creative advantage—scale faster & smarter" },
-              { icon: Settings, text: "Technology-enabled systems—marketing that&apos;s measurable & repeatable" },
-              { icon: CheckCircle2, text: "Proven, disciplined delivery—marketing as a true driver of growth" },
-            ].map((item, idx) => {
-              const Icon = item.icon;
-              return (
-                <motion.div
-                  key={idx}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: idx * 0.1 }}
-                  whileHover={{ y: -10, scale: 1.03 }}
-                  className="group relative p-8 bg-white border-2 border-gray-100 rounded-3xl hover:border-primary/40 transition-all duration-300 shadow-lg hover:shadow-2xl cursor-pointer overflow-hidden"
-                >
-                  <div className="absolute top-0 right-0 w-40 h-40 bg-primary/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <div className="relative z-10">
-                    <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-                      <Icon className="w-8 h-8 text-primary group-hover:text-white transition-colors duration-300" />
-                    </div>
-                    <p className="text-black/80 text-[15px] font-semibold leading-relaxed group-hover:text-primary transition-colors duration-300">{item.text}</p>
-                  </div>
-                </motion.div>
-              );
-            })}
-          </div>
-          
-          {/* CTA Button */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-center"
-          >
-            <motion.button
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.98 }}
-              className="bg-primary text-white px-10 py-5 rounded-full font-display font-bold text-lg flex items-center gap-3 mx-auto hover:bg-text-dark transition-all duration-300 shadow-lg hover:shadow-xl"
-            >
-              Let&apos;s Build Your Marketing Engine
-              <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-            </motion.button>
-          </motion.div>
-        </div>
+       
 
         {/* Outcome CTA Box */}
-        <div className="max-w-4xl mx-auto py-12">
+        {/* <div className="max-w-4xl mx-auto py-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -203,7 +147,7 @@ const OurTechnology = () => {
               Marketing operations that are efficient, accountable, and agile—letting your team focus on strategy and growth.
             </p>
           </motion.div>
-        </div>
+        </div> */}
 
         <ExpertiseSplit
           reverse={false}

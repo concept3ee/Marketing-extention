@@ -1,16 +1,13 @@
 import type { Metadata } from "next";
-import { Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import HeaderWrapper from "@/components/header-wrapper";
 import HeroFooter from "@/components/footer";
-
-const bricolage_Grotesque = Bricolage_Grotesque({
-  variable: "--font-bricolage-grotesque",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
- 
-
-});
+import {
+  bricolageGrotesque,
+  interTight,
+  inter,
+  instrumentSerif,
+} from "./fonts";
 
 
 export const metadata: Metadata = {
@@ -24,10 +21,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${bricolage_Grotesque.variable} antialiased`}
-      >
+    <html
+      lang="en"
+      className={`${bricolageGrotesque.variable} ${interTight.variable} ${inter.variable} ${instrumentSerif.variable}`}
+    >
+      <body className="antialiased">
         <HeaderWrapper />
         {children}
         <footer>

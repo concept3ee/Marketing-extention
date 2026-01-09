@@ -9,7 +9,20 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-bricolage-grotesque);
+  
+  /* Font Families with Fallbacks */
+  --font-inter-tight: var(--font-inter-tight-face), var(--font-inter-face), Arial, sans-serif;
+  --font-inter: var(--font-inter-face), Arial, sans-serif;
+  --font-instrument-serif: var(--font-instrument-serif-face), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-serif: var(--font-instrument-serif-face), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-mono: var(--font-geist-mono);
+  
+  /* Tailwind Font Family Utilities */
+  --font-family-inter-tight: var(--font-inter-tight-face), var(--font-inter-face), Arial, sans-serif;
+  --font-family-inter: var(--font-inter-face), Arial, sans-serif;
+  --font-family-instrument-serif: var(--font-instrument-serif-face), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-family-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-family-arial: Arial, sans-serif;
   
   /* Custom Colors */
   --color-primary: #FF6B3D;
@@ -19,10 +32,6 @@
   --color-bg-gray: #F5F5F7;
   --color-text-dark: #0B0D17;
   --color-text-muted: #6B7280;
-  
-  /* Font Families */
-  --font-family-sans: 'Albert Sans', sans-serif;
-  --font-family-display: 'Bricolage Grotesque', sans-serif;
   
   /* Border Radius */
   --radius-lg: 24px;
@@ -43,8 +52,29 @@ body {
   overflow-x: hidden;
 }
 
+/* Font Utility Classes */
 .font-display {
-  font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: var(--font-bricolage-grotesque), sans-serif;
+}
+
+.font-inter-tight {
+  font-family: var(--font-inter-tight-face), var(--font-inter-face), Arial, sans-serif;
+}
+
+.font-inter {
+  font-family: var(--font-inter-face), Arial, sans-serif;
+}
+
+.font-instrument-serif {
+  font-family: var(--font-instrument-serif-face), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.font-arial {
+  font-family: Arial, sans-serif;
 }
 
 .no-scrollbar::-webkit-scrollbar {
@@ -176,4 +206,3 @@ body {
 .animation-delay-300 {
   animation-delay: 0.3s;
 }
-

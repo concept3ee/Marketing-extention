@@ -130,7 +130,7 @@ export default function EventsGridWithTabs({
 
   return (
     <section className={cn("w-full ", className)}>
-      <div className="mx-auto max-w-6xl px-6 py-10">
+      <div className="mx-auto max-w-6xl px-6 pt-3">
         {/* Tabs */}
         <div className="flex items-center gap-2">
           <TabButton active={tab === "all"} onClick={() => setTab("all")}>

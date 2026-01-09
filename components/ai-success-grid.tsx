@@ -74,15 +74,15 @@ export default function AiSuccessGrid({
   }
 
   return (
-    <section className={cn("w-full ", className)}>
-      <div className="mx-auto max-w-6xl px-6 py-12">
+    <section className={cn("w-full bg-[#0f201c]", className)}>
+      <div className="mx-auto max-w-6xl px-6 py-14">
         {/* Header */}
         <div className="text-center">
-          <div className="text-[9px] tracking-[0.22em] text-white/35">
+          <div className="text-[9px] tracking-[0.24em] text-[#c7e48a]/70">
             {kicker}
           </div>
 
-          <h2 className="mt-3 text-[26px] leading-[1.1] text-white/90 md:text-[32px]">
+          <h2 className="mt-4 text-[26px] leading-[1.1] text-white/90 md:text-[32px]">
             {title.split(highlightWord)[0]}
             <span className="text-[#c7e48a]">{highlightWord}</span>
             {title.split(highlightWord)[1]?.includes(italicWord) ? (
@@ -107,40 +107,41 @@ export default function AiSuccessGrid({
         <div className="mt-10 grid grid-cols-1 md:grid-cols-3">
           {cells.map((cell, idx) => {
             const isTopRow = idx < 3;
+            const isFirstCol = idx % 3 === 0;
 
             return (
               <div
                 key={idx}
                 className={cn(
-                  "px-8 py-7",
+                  "px-8 py-7 text-left",
                   "border-white/10",
-                  // column dividers
-                  idx % 3 !== 0 && "",
-                  // row divider (line between row 1 and row 2)
-                  isTopRow && "border-b"
+                  idx > 0 && "border-t",
+                  !isTopRow && "md:border-t",
+                  !isFirstCol && "md:border-l",
+                  isTopRow && "md:border-t-0"
                 )}
               >
                 {cell.kind === "text" ? (
                   <>
-                    <p className="max-w-[44ch] text-[10px] leading-[14px] text-white/55">
+                    <p className="max-w-[44ch] text-[10px] leading-[14px] text-white/60">
                       {cell.text}
                     </p>
                     {cell.link ? <CaseLink link={cell.link} /> : null}
                   </>
                 ) : (
-                  <>
+                  <div className="text-center">
                     <div className="text-[#c7e48a] text-[30px] leading-none md:text-[34px]">
                       {cell.value}
                     </div>
 
                     {cell.text ? (
-                      <p className="mt-3 max-w-[44ch] text-[10px] leading-[14px] text-white/55">
+                      <p className="mx-auto mt-3 max-w-[44ch] text-[10px] leading-[14px] text-white/60">
                         {cell.text}
                       </p>
                     ) : null}
 
                     {cell.link ? <CaseLink link={cell.link} /> : null}
-                  </>
+                  </div>
                 )}
               </div>
             );

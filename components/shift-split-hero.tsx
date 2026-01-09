@@ -75,7 +75,7 @@ function MiniAvatar({ src, alt, className = "" }: MiniFace) {
   return (
     <div
       className={cn(
-        "relative h-5 w-5 overflow-hidden rounded-[4px] bg-white/10 ring-1 ring-white/30",
+        "relative h-5 w-5 overflow-hidden bg-white/10 ring-1 ring-white/30",
         className
       )}
     >
@@ -87,7 +87,7 @@ function MiniAvatar({ src, alt, className = "" }: MiniFace) {
 function SpeakerCard({ p }: { p: Person }) {
   return (
     <div className="w-[210px]">
-      <div className="relative h-[170px] w-full overflow-hidden rounded-md bg-white/10 ring-1 ring-white/10">
+      <div className="relative h-[170px] w-full overflow-hidden  bg-white/10 ring-1 ring-white/10">
         <Image
           src={p.avatarSrc}
           alt={p.avatarAlt ?? p.name}
@@ -165,11 +165,11 @@ export default function ShiftSplitHero({
   className = "",
 }: Props) {
   return (
-    <section className={cn("w-full px-6 py-10", className)}>
-      <div className="mx-auto max-w-6xl">
-        <div className="grid overflow-hidden rounded-xl lg:grid-cols-2">
+    <section className={cn("w-full px-0 py-10", className)}>
+      <div className="w-full ">
+        <div className="grid overflow-hidden  lg:grid-cols-2">
           {/* LEFT PANEL */}
-          <div className="relative min-h-[520px] bg-black/5">
+          <div className="group/left relative min-h-[520px] bg-black/5 transition-transform duration-300 ease-out hover:-translate-y-1 hover:scale-[1.01]">
             {/* bg */}
             <Image
               src={leftBgSrc}
@@ -199,6 +199,7 @@ export default function ShiftSplitHero({
                   className={cn(
                     "absolute text-white/90 font-semibold tracking-tight",
                     "text-[28px] leading-none md:text-[30px]",
+                    "transition-transform duration-300 ease-out group-hover/left:-translate-y-1",
                     c.className
                   )}
                   style={c.pos as React.CSSProperties}
@@ -207,7 +208,7 @@ export default function ShiftSplitHero({
                 </div>
                 {c.face ? (
                   <div
-                    className="absolute"
+                    className="absolute transition-transform duration-300 ease-out group-hover/left:-translate-y-1 group-hover/left:scale-[1.05]"
                     style={(c.facePos ?? {}) as React.CSSProperties}
                   >
                     <MiniAvatar {...c.face} />
@@ -217,7 +218,7 @@ export default function ShiftSplitHero({
             ))}
 
             {/* bottom left */}
-            <div className="absolute bottom-6 left-6 max-w-[290px]">
+            <div className="absolute bottom-6 left-6 max-w-[290px] transition-transform duration-300 ease-out group-hover/left:-translate-y-1 group-hover/left:scale-[1.02]">
               <a
                 href="#"
                 className="inline-flex items-center gap-2 font-serif text-[18px] text-white/90"
@@ -231,7 +232,7 @@ export default function ShiftSplitHero({
             </div>
 
             {/* bottom right pill */}
-            <div className="absolute bottom-6 right-6">
+            <div className="absolute bottom-6 right-6 transition-transform duration-300 ease-out group-hover/left:-translate-y-1 group-hover/left:scale-[1.04]">
               <span className="inline-flex items-center rounded-full bg-white/20 px-3 py-1 text-[10px] text-white/85 backdrop-blur">
                 {leftCtaPill}
               </span>
@@ -239,7 +240,7 @@ export default function ShiftSplitHero({
           </div>
 
           {/* RIGHT PANEL */}
-          <div className="relative min-h-[520px] bg-[#0f1414]">
+          <div className="group/right relative min-h-[520px] bg-[#0f1414] transition-transform duration-300 ease-out hover:-translate-y-1 hover:scale-[1.01]">
             {/* optional bg */}
             {rightBgSrc ? (
               <>
@@ -263,12 +264,16 @@ export default function ShiftSplitHero({
             <div className="relative flex h-full flex-col px-10 py-10">
               {/* speakers row */}
               <div className="flex gap-8">
-                <SpeakerCard p={guest} />
-                <SpeakerCard p={host} />
+                <div className="transition-transform duration-300 ease-out group-hover/right:-translate-y-1 group-hover/right:scale-[1.02]">
+                  <SpeakerCard p={guest} />
+                </div>
+                <div className="transition-transform duration-300 ease-out group-hover/right:-translate-y-1 group-hover/right:scale-[1.02]">
+                  <SpeakerCard p={host} />
+                </div>
               </div>
 
               {/* talk info */}
-              <div className="mt-10 max-w-[520px]">
+              <div className="mt-10 max-w-[520px] transition-transform duration-300 ease-out group-hover/right:-translate-y-1 group-hover/right:scale-[1.01]">
                 <a
                   href="#"
                   className="font-serif text-[22px] leading-[1.15] text-white/90 hover:underline"
@@ -281,7 +286,7 @@ export default function ShiftSplitHero({
               </div>
 
               {/* bottom right pill */}
-              <div className="mt-auto flex justify-end">
+              <div className="mt-auto flex justify-end transition-transform duration-300 ease-out group-hover/right:-translate-y-1 group-hover/right:scale-[1.04]">
                 <span className="inline-flex items-center rounded-full bg-white/10 px-3 py-1 text-[10px] text-white/75 ring-1 ring-white/15 backdrop-blur">
                   {rightCtaPill}
                 </span>

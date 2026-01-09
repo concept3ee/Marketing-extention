@@ -26,7 +26,7 @@ export default function TeamHoverCard({
   return (
     <div
       className={[
-        "group w-[320px] overflow-hidden rounded-xl bg-[#121818] cursor-pointer",
+        "group/card w-[320px] self-start overflow-hidden rounded-xl bg-[#121818] cursor-pointer",
         "ring-1 ring-white/10",
         className,
       ].join(" ")}
@@ -66,7 +66,7 @@ export default function TeamHoverCard({
             "mt-3 overflow-hidden",
             "max-h-0 opacity-0 translate-y-1",
             "transition-all duration-300 ease-out",
-            "group-hover:max-h-10 group-hover:opacity-100 group-hover:translate-y-0",
+            "group-hover/card:max-h-10 group-hover/card:opacity-100 group-hover/card:translate-y-0",
           ].join(" ")}
         >
           <p className="text-[11px] leading-[15px] text-white/55">

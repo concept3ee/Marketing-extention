@@ -54,18 +54,24 @@ function TileMedia({ media }: { media: Media }) {
 function MosaicCard({ tile }: { tile: MosaicTile }) {
   const theme = tile.theme ?? "dark";
 
-  const spanClass =
-    tile.span
-      ? cn(
-          `md:col-span-${tile.span.col}`,
-          `md:row-span-${tile.span.row}`
-        )
-      : "md:col-span-1 md:row-span-1";
+  const spanKey = tile.span ? `${tile.span.col}-${tile.span.row}` : "1-1";
+  const spanClassMap: Record<string, string> = {
+    "1-1": "md:col-span-1 md:row-span-1",
+    "1-2": "md:col-span-1 md:row-span-2",
+    "1-3": "md:col-span-1 md:row-span-3",
+    "2-1": "md:col-span-2 md:row-span-1",
+    "2-2": "md:col-span-2 md:row-span-2",
+    "2-3": "md:col-span-2 md:row-span-3",
+    "3-1": "md:col-span-3 md:row-span-1",
+    "3-2": "md:col-span-3 md:row-span-2",
+    "3-3": "md:col-span-3 md:row-span-3",
+  };
+  const spanClass = spanClassMap[spanKey] ?? spanClassMap["1-1"];
 
   return (
     <div
       className={cn(
-        "relative overflow-hidden rounded-2xl",
+        "relative overflow-hidden rounded",
         theme === "dark" ? "bg-[#121818]" : "bg-[#dfe1ef]",
         "ring-1 ring-black/5",
         spanClass
@@ -94,8 +100,8 @@ function MosaicCard({ tile }: { tile: MosaicTile }) {
         <div>
           <div
             className={cn(
-              "text-[9px] tracking-[0.22em]",
-              theme === "dark" ? "text-white/55" : "text-black/55"
+              "text-[15px] tracking-[0.22em]",
+              theme === "dark" ? "text-white" : "text-black/55"
             )}
           >
             {tile.kicker}
@@ -103,8 +109,8 @@ function MosaicCard({ tile }: { tile: MosaicTile }) {
 
           <div
             className={cn(
-              "mt-2 text-[14px] font-medium leading-[1.15]",
-              theme === "dark" ? "text-white/90" : "text-black/85"
+              "mt-2 text-[20px] font-medium leading-[1.15]",
+              theme === "dark" ? "text-white" : "text-black/85"
             )}
           >
             {tile.title}
@@ -114,8 +120,8 @@ function MosaicCard({ tile }: { tile: MosaicTile }) {
         {tile.description ? (
           <p
             className={cn(
-              "mt-4 text-[9px] leading-[13px] max-w-[48ch]",
-              theme === "dark" ? "text-white/55" : "text-black/60"
+              "mt-4 text-[13px]  max-w-[48ch]",
+              theme === "dark" ? "text-white" : "text-black/60"
             )}
           >
             {tile.description}
@@ -136,7 +142,7 @@ export default function MediaMosaicGrid({
   className?: string;
 }) {
   return (
-    <section className={cn("w-full ]", className)}>
+    <section className={cn("w-full", className)}>
       <div className="mx-auto max-w-6xl px-6 py-10">
         {/* 3 columns on desktop + consistent row height for row-span mosaic */}
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:auto-rows-[170px]">

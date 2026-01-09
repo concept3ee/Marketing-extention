@@ -1,6 +1,7 @@
 import ExpertiseSplit from "@/components/expertise-pill";
 import GlobalTeamHero from "@/components/global-team-hero";
 import ProcessSection from "@/components/process-section";
+import ProofTiles from "@/components/proof-tiles";
 import TeamSpotlightTabs from "@/components/spot-light-tab";
 import { TeamMember, TeamMemberCard } from "@/components/team-members";
 
@@ -10,13 +11,14 @@ const members: TeamMember[] = [
   { name: "Lade", role: "Practice Lead, Creative Experience & Content+", imageSrc: "/agent.avif" },
   { name: "Stanley", role: "Practice Lead, Technology & MarTech Systems", imageSrc: "/agent.avif" },
   { name: "Adebola", role: "Director of Operations & Performance", imageSrc: "/agent.avif" },
+  { name: "Adebola", role: "Director of Operations & Performance", imageSrc: "/agent.avif" },
 ];
 
 const CreativeTalent = () => {
   return (
     <div className="">
       <div
-        className="p-20 rounded-[20px] flex flex-col gap-4"
+        className="p-20  flex flex-col gap-4"
         style={{
           backgroundImage: "url(/bg-image.avif)",
           backgroundSize: "cover",
@@ -29,9 +31,9 @@ const CreativeTalent = () => {
             The People Powering Your Marketing Engine
           </p>
           <p className="text-white text-[16px] font-medium">
-            Our dedicated team of strategists, creatives, and technologists becomes an extension of your business. Every engagement is grounded in clarity, discipline, and measurable outcomes.
+            Our dedicated team of strategists, creatives, and technologists becomes an extension of your<br/> business. Every engagement is grounded in clarity, discipline, and measurable outcomes.
           </p>
-          <button className="bg-green-500 px-3 py-2 w-[10%] text-[15px] rounded-full">
+          <button className="bg-green-500 px-3 text-white py-2 w-[10%] text-[15px] rounded-full">
             Book a demo
           </button>
         </div>
@@ -41,29 +43,11 @@ const CreativeTalent = () => {
           Global Bench
         </p>
         <p className="text-black text-[21px] font-medium text-center">
-          115+ consultants and specialists across Nigeria, Ghana, Kenya, Rwanda, South Africa, Canada, and the UK.
+          
         </p>
-        <div className="px-6 py-8 max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-6 text-center">
-            <div>
-              <p className="text-4xl font-bold text-primary mb-2">95%</p>
-              <p className="text-sm text-text-muted">of projects delivered on time & scope</p>
-            </div>
-            <div>
-              <p className="text-4xl font-bold text-primary mb-2">100+</p>
-              <p className="text-sm text-text-muted">marketing engines built</p>
-            </div>
-            <div>
-              <p className="text-4xl font-bold text-primary mb-2">7+</p>
-              <p className="text-sm text-text-muted">countries spanned across engagements</p>
-            </div>
-          </div>
-        </div>
-        <div className="px-6 py-8 max-w-3xl mx-auto bg-primary rounded-2xl text-center text-white">
-          <p className="text-lg font-medium">
-            Your marketing becomes coherent, scalable, measurable, and fully embedded into your business rhythm.
-          </p>
-        </div>
+        
+        <ProofTiles />
+       
       </div>
       <div className="bg-[#121818] w-full ">
         <div className="p-12">
@@ -119,14 +103,14 @@ const CreativeTalent = () => {
           kicker="FULL-STACK EXPERTISE"
           title="Collaborate with brilliant people"
           italicTitle="across every discipline"
-          posterSrc="/agent.avif"
+          posterSrc="/amazon.avif"
         />
         <ExpertiseSplit
           reverse={false}
           kicker="FULL-STACK EXPERTISE"
           title="Collaborate with brilliant people"
           italicTitle="across every discipline"
-          posterSrc="/agent.avif"
+          posterSrc="/amazon.avif"
         />
         <div className="pt-12">
           <h3 className="text-black/80 text-[15px] font-medium text-center">

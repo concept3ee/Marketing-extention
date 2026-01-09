@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 type Stat = { value: string; label: string };
 
 type Props = {
@@ -95,14 +97,31 @@ export default function ExpertiseSplit({
 
           {/* RIGHT (video card) */}
           <div className="flex-1">
-            <div className="overflow-hidden rounded-xl bg-black/10">
-              <video
-                className="h-full w-full object-cover"
-                src={videoSrc}
-                poster={posterSrc}
-                controls
-                playsInline
-              />
+            <div className="relative overflow-hidden rounded-xl bg-black/10">
+              {videoSrc ? (
+                <video
+                  className="h-full w-full object-cover"
+                  src={videoSrc}
+                  poster={posterSrc}
+                  playsInline
+                  autoPlay
+                  muted
+                  loop
+                  preload="metadata"
+                />
+              ) : posterSrc ? (
+                <div className="relative aspect-[4/3] w-full">
+                  <Image
+                    src={posterSrc}
+                    alt={title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
+                </div>
+              ) : (
+                <div className="aspect-[4/3] w-full bg-black/5" />
+              )}
             </div>
           </div>
         </div>

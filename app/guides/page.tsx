@@ -28,7 +28,7 @@ const Guide = () => {
   return (
     <div className="pt-28 bg-white w-full h-full">
       <div className="space-y-3  px-8">
-        <h1 className="text-black/80 text-[15px] font-medium text-center">
+        <h1 className="text-black/80 text-[15px] font-medium text-center font-inter-tight">
           Events & Summits
         </h1>
         <p className="text-black/80 text-[20px] text-center font-medium leading-7">
