@@ -1,42 +1,18 @@
-import EventsGridWithTabs, { EventCard } from "@/components/event-grids-tabs";
-import GuidesGrid, { GuideItem } from "@/components/guides-grid";
-import SplitFeatureCards from "@/components/split-feature-card";
-import React from "react";
+import EventsGridWithTabs from "@/components/event-grids-tabs";
+import { eventCards } from "@/data/events";
 
 const Guide = () => {
-    const items: EventCard[] = [
-        {
-          id: "shift-summit",
-          type: "summit",
-          title: "Shift Summit",
-          description:
-            "From AI hype to creative impact. Join industry leaders from Airbnb, Skyscanner, and Microsoft…",
-          imageSrc: "/mac-image.avif",
-        },
-        {
-          id: "design-guidelines",
-          type: "webinar",
-          title: "Why teams aren’t using your design guidelines",
-          description:
-            "How a large, multi-brand organization navigates scale, consistency, and adoption…",
-          imageSrc: "/mac-image.avif",
-        },
-        // add the rest...
-      ];
   return (
     <div className="pt-28 bg-white w-full h-full">
       <div className="space-y-3  px-8">
         <h1 className="text-black/80 text-[15px] font-medium text-center font-inter-tight">
-          Events & Summits
+          Playbooks
         </h1>
         <p className="text-black/80 text-[20px] text-center font-medium leading-7">
-          The tech powering your
-          <br /> creative edge
+          Growth Marketing-as-a-Service, clearly explained
         </p>
         <p className="text-black/90 text-center text-[16px] font-medium">
-          We use the latest and greatest technology to power your
-          <br /> creative edge. We are constantly updating our
-          <br /> technology to stay ahead of the curve.
+          Practical resources that show how to deliver strategy, talent, and execution with confidence.
         </p>
       </div>
       {/* <SplitFeatureCards
@@ -44,30 +20,30 @@ const Guide = () => {
           imageSrc: "/mac-image.avif",
           headline: (
             <div className="font-serif italic text-[#c7e48a] text-[64px] leading-[0.9]">
-              Shift <br />
+              Growth <br />
               <span className="not-italic font-normal text-[#c7e48a]">
-                Happens
+                Marketing
               </span>
             </div>
           ),
-          linkTitle: "Shift Happens Survival Guide",
+          linkTitle: "GMaaS Launch Guide",
           linkHref: "#",
           description:
-            "AI was meant to be the solution. So why are so many of us stuck in survival mode? This is your team's guide to navigating AI expectations, adoption,…",
+            "A clear guide to strategy, team setup, and execution that drives measurable progress.",
           bottomTheme: "dark",
         }}
         right={{
           imageSrc: "/mac-image.avif",
           blurImage: true,
-          linkTitle: "Inside Great Creative Partnerships",
+          linkTitle: "Marketing Extension Pod Playbook",
           linkHref: "#",
           description:
-            "The secret to great creative? Great partnerships. Tap into the minds of 22 top creative and marketing leaders as they tackle big questions, together.",
+            "How to structure on-demand talent, workflows, and reporting for fast, flexible delivery.",
           bottomTheme: "dark",
         }}
       /> */}
       <div className="p-20">
-      <EventsGridWithTabs items={items} />
+      <EventsGridWithTabs items={eventCards} />
       </div>
     </div>
   );

@@ -1,26 +1,7 @@
 "use client";
-import EventsGridWithTabs, { EventCard } from "@/components/event-grids-tabs";
+import EventsGridWithTabs from "@/components/event-grids-tabs";
 import ShiftSplitHero from "@/components/shift-split-hero";
-
-const items: EventCard[] = [
-    {
-      id: "shift-summit",
-      type: "summit",
-      title: "Shift Summit",
-      description:
-        "From AI hype to creative impact. Join industry leaders from Airbnb, Skyscanner, and Microsoft…",
-      imageSrc: "/mac-image.avif",
-    },
-    {
-      id: "design-guidelines",
-      type: "webinar",
-      title: "Why teams aren’t using your design guidelines",
-      description:
-        "How a large, multi-brand organization navigates scale, consistency, and adoption…",
-      imageSrc: "/mac-image.avif",
-    },
-   
-  ];
+import { eventCards } from "@/data/events";
 
 const Events = () => {
   return (
@@ -30,10 +11,10 @@ const Events = () => {
           Events & Summits
         </h1>
             <p className="text-black/80 text-[20px] text-center font-medium leading-7">
-              Connect, Learn, and Lead
+              Growth Marketing-as-a-Service in the real world
             </p>
             <p className="text-black/90 text-center text-[16px] font-medium">
-              Exclusive events designed for marketing leaders, founders, and innovators.
+              Clear, practical sessions on strategy, talent, and execution that drive measurable progress.
             </p>
         
 
@@ -49,23 +30,23 @@ const Events = () => {
                label: "GUEST",
                name: "Vishal Kapoor",
                title: "Brand OS Lead",
-               org: "at Lloyds",
+               org: "at Marketing Extension",
                avatarSrc: "/mac-image.avif",
              }}
              host={{
                label: "HOST",
                name: "Kae Neskovic",
                title: "Executive Creative Director",
-               org: "at Superside",
+               org: "at Marketing Extension",
                avatarSrc: "/mac-image.avif",
              }}
-             rightTalkTitle="Why teams aren't using your design guidelines"
-             rightTalkDesc="How a large, multi-brand organization navigates scale, consistency, and adoption through systems thinking, cross-functional collaboration, and…"
+             rightTalkTitle="Growth Marketing-as-a-Service: Strategy to Execution"
+             rightTalkDesc="A practical session on clear direction, the right people at the right time, and campaigns built for measurable growth."
            />
          </div>
       <div className="p-5">
         <h1 className="text-black/80 text-[15px] font-medium text-center my-3">All Events</h1>
-      <EventsGridWithTabs items={items} />
+      <EventsGridWithTabs items={eventCards} />
       </div>
     </div>
   );

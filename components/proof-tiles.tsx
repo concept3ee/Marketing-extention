@@ -52,7 +52,7 @@ function BrandWordmark({
 
 export default function ProofTiles() {
   return (
-    <section className="w-full bg-[#f6f7f1]">
+    <section className="w-full ">
       <div className="mx-auto max-w-6xl px-6 py-10">
         {/* Layout */}
         <div className="grid gap-6 md:grid-cols-[1.15fr_1fr]">

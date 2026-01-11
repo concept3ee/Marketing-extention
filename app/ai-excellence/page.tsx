@@ -116,15 +116,14 @@ const AiExcellence = () => {
             AI Excellence
           </h1>
           <p className="text-white text-[30px] font-semibold leading-7">
-            Your Shortcut to AI Creative Advantage
+            Systems that make growth marketing faster and clearer
           </p>
           <p className="text-white text-[16px] font-medium">
-            We use AI to supercharge marketing, combining human insight with
-            machine-level discipline to deliver <br />
-            faster,smarter, and more impactful creative.
+            We combine strategic direction, on-demand talent, and automation to
+            deliver measurable progress for ambitious teams.
           </p>
-          <button className="bg-green-500 px-3 py-2 w-[10%] text-[15px] rounded-full">
-            Book a demo
+          <button className="bg-green-500 px-4 py-2 w-fit text-[15px] rounded-full">
+            Book a call
           </button>
         </div>
       </div>
@@ -133,29 +132,29 @@ const AiExcellence = () => {
         features={[
           {
             icon: "clock",
-            title: "Saving time and money",
-            desc: "We know this ends up working with AI, completing your work faster and at lower cost.",
+            title: "Fast, flexible delivery",
+            desc: "Combine strategy, talent, and automation to move faster without sacrificing quality.",
           },
           {
             icon: "shield",
-            title: "Integrated human + AI workflow",
-            desc: "Almost 100% of Superside creatives are AI-certified so they can move fast while ensuring alignment with brand and brief.",
+            title: "Human-led, system-backed",
+            desc: "Senior marketing leadership with repeatable workflows and clear accountability.",
           },
           {
             icon: "spark",
-            title: "Continuously future-proofing",
-            desc: "We’re always testing the limits of AI tools. When even a custom workflow is needed, we build it.",
+            title: "Measured progress",
+            desc: "Dashboards and reporting keep teams aligned on outcomes and impact.",
           },
           {
             icon: "layers",
-            title: "Transparency and control",
-            desc: "You choose how we use AI in the creative process for your brand, ensuring output aligns with expectations.",
+            title: "On-demand expertise",
+            desc: "Access Africa's top marketing talent exactly when you need it.",
           },
         ]}
       />
       <div className="flex flex-col gap-4 bg-white w-full p-10">
         <h1 className="text-black text-[15px] font-medium text-center uppercase tracking-widest">
-          AI-Powered Creative Production
+          Marketing Execution in Practice
         </h1>
 
         <MediaMosaicGrid tiles={tiles} />
@@ -163,48 +162,48 @@ const AiExcellence = () => {
       <div className="bg-[#121818] w-full grid grid-cols-2 py-9 px-12">
         
         <AiStatRow
-          text="Saved in a single project using AI. Mika tight deadline by delivering it off the time."
-          value="$9k+"
-          linkLabel="National Gas Marketing case study"
+          text="Measured lift from a focused campaign sprint and clear reporting."
+          value="+40%"
+          linkLabel="Market entry case study"
           linkHref="#"
         />
          <AiStatRow
-          text="Saved in a single project using AI. Mika tight deadline by delivering it off the time."
-          value="$9k+"
-          linkLabel="National Gas Marketing case study"
+          text="Reduced time-to-launch with on-demand talent and clear ownership."
+          value="6 weeks"
+          linkLabel="Product launch case study"
           linkHref="#"
         /> <AiStatRow
-          text="Saved in a single project using AI. Mika tight deadline by delivering it off the time."
-          value="$9k+"
-          linkLabel="National Gas Marketing case study"
+          text="Improved pipeline quality through tailored campaigns and consistent execution."
+          value="+28%"
+          linkLabel="Pipeline growth case study"
           linkHref="#"
         /> <AiStatRow
-          text="Saved in a single project using AI. Mika tight deadline by delivering it off the time."
-          value="$9k+"
-          linkLabel="National Gas Marketing case study"
+          text="Enabled leadership visibility with a unified marketing scorecard."
+          value="100%"
+          linkLabel="Leadership visibility case study"
           linkHref="#"
         />
       </div>
       <div className="w-full px-16 py-8 flex flex-col gap-3 bg-white">
         <ExpertiseSplit
           reverse={false}
-          kicker="AI EXCELLENCE"
-          title="Strategic AI integration into marketing engines"
-          italicTitle="Consistent brand messaging and imagery across channels"
+          kicker="GMaaS DELIVERY"
+          title="Strategic direction embedded in marketing engines"
+          italicTitle="Consistent messaging and execution across channels"
           videoSrc="/slack.mp4"
         />
         <ExpertiseSplit
           reverse={true}
-          kicker="PROCESS AUTOMATION"
-          title="Process Automation and Workflows"
-          italicTitle="Faster production cycles with higher quality creative outputs"
+          kicker="PROCESS DISCIPLINE"
+          title="Clear workflows and operating rhythms"
+          italicTitle="Faster cycles with higher quality outputs"
           posterSrc="/amazon.avif"
         />
         <ExpertiseSplit
           reverse={false}
-          kicker="AI ENABLED CAMPAIGNS"
-          title="AI-enabled campaign planning & measurement"
-          italicTitle="Scalable campaigns without additional headcount"
+          kicker="MEASURED CAMPAIGNS"
+          title="Campaign planning and measurement"
+          italicTitle="Scalable execution without extra headcount"
           videoSrc="/slack.mp4"
         />
       </div>
@@ -263,14 +262,13 @@ const AiExcellence = () => {
             AI Excellence
           </p>
           <p className="text-white text-[30px] font-medium ">
-            Marketing that is smarter, faster, and AI-powered
+            Marketing that is smarter, faster, and measurable
           </p>
           <p className="text-white text-[16px] font-medium my-3">
-            Marketing that is smarter, faster, and AI-powered—giving your brand
-            a creative edge that scales.
+            Strategy, talent, and execution delivered fast, flexibly, and affordably.
           </p>
           <button className="bg-green-500 text-white font-family-inter cursor-pointer  p-1 text-[15px] rounded-[20px] w-[150px] text-center whitespace-nowrap">
-            Book a demo
+            Book a call
           </button>
         </div>
       </div>

@@ -28,7 +28,7 @@ const data: Testimonial[] = [
     },
     author: "Justin Rands",
     role: "Director of Brand at Oyster",
-    avatarUrl: "/images/avatars/oyster-1.jpg",
+    avatarUrl: "/kayla.avif",
     stats: [
       { value: "57%", label: "Production time saved" },
       { value: "$10,775", label: "Cost savings" },
@@ -37,7 +37,7 @@ const data: Testimonial[] = [
     caseStudy: {
       tag: "OYSTER",
       title: "How Oyster Automates Global Social Media Campaigns",
-      thumbUrl: "/images/case/oyster.jpg",
+      thumbUrl: "/world-class.avif",
     },
   },
   {
@@ -49,7 +49,7 @@ const data: Testimonial[] = [
     },
     author: "Nina Patel",
     role: "Brand Lead at Palo Alto Networks",
-    avatarUrl: "/images/avatars/pan-1.jpg",
+    avatarUrl: "/agent.avif",
     stats: [
       { value: "42%", label: "Faster delivery" },
       { value: "$18,240", label: "Cost savings" },
@@ -58,7 +58,7 @@ const data: Testimonial[] = [
     caseStudy: {
       tag: "PALO ALTO",
       title: "Scaling Creative Ops Without Scaling Headcount",
-      thumbUrl: "/images/case/pan.jpg",
+      thumbUrl: "/workflow.avif",
     },
   },
   {
@@ -70,7 +70,7 @@ const data: Testimonial[] = [
     },
     author: "Chris Morgan",
     role: "Creative Producer at MasterClass",
-    avatarUrl: "/images/avatars/mc-1.jpg",
+    avatarUrl: "/pernord-richard.avif",
     stats: [
       { value: "3x", label: "More output" },
       { value: "$9,980", label: "Cost savings" },
@@ -79,7 +79,7 @@ const data: Testimonial[] = [
     caseStudy: {
       tag: "MASTERCLASS",
       title: "From Brief to Launch in Record Time",
-      thumbUrl: "/images/case/mc.jpg",
+      thumbUrl: "/mac-image.avif",
     },
   },
 ];

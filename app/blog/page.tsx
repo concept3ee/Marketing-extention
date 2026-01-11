@@ -7,18 +7,18 @@ const BlogPage = () => {
   const sectionRefs = useRef<{ [key: string]: HTMLElement | null }>({});
 
   const tableOfContents = [
-    { id: "best-practices", label: "Best practices for creating effective AI-generated ads" },
-    { id: "top-10-generators", label: "10 best AI ad creative generators in 2026" },
-    { id: "superside", label: "1. Superside" },
-    { id: "adcreative", label: "2. AdCreative.ai" },
-    { id: "narrato", label: "3. Narrato" },
-    { id: "invideo", label: "4. InVideo" },
-    { id: "creaty", label: "5. Creaty" },
-    { id: "recreate", label: "6. Recreate" },
-    { id: "pencil", label: "7. Pencil" },
-    { id: "adflow", label: "8. Adflow by Pixlet" },
-    { id: "predis", label: "9. Predis" },
-    { id: "quickads", label: "10. Quickads" },
+    { id: "best-practices", label: "About Marketing Extension" },
+    { id: "top-10-generators", label: "Growth Marketing-as-a-Service (GMaaS)" },
+    { id: "superside", label: "Tone of Voice" },
+    { id: "adcreative", label: "Tagline" },
+    { id: "narrato", label: "Logo System" },
+    { id: "invideo", label: "Clear Space and Scaling" },
+    { id: "creaty", label: "Color Palette" },
+    { id: "recreate", label: "Typography" },
+    { id: "pencil", label: "Iconography" },
+    { id: "adflow", label: "Stationery" },
+    { id: "predis", label: "Media Identity" },
+    { id: "quickads", label: "Patterns and Brand Elements" },
     { id: "faqs", label: "FAQs" },
   ];
 
@@ -63,10 +63,10 @@ const BlogPage = () => {
   return (
     <div className="pt-28 bg-white min-h-screen">
       <div className="max-w-7xl mx-auto px-6 py-8">
-        {/* Header Section */}
+          {/* Header Section */}
         <div className="mb-8">
           <h1 className="text-[42px] md:text-[48px] font-bold text-black mb-4 leading-tight">
-            10 Best AI Ad Creative Generators & Tools in 2026 (Tested)
+            Marketing Extension Brand Overview
           </h1>
           
           {/* Author Info */}
@@ -76,7 +76,7 @@ const BlogPage = () => {
             </div>
             <div>
               <p className="text-sm text-gray-700">
-                By <span className="font-semibold">Roger Match</span> Content Marketer
+                By <span className="font-semibold">Marketing Extension</span> Brand Team
               </p>
             </div>
           </div>
@@ -163,7 +163,7 @@ const BlogPage = () => {
               <div className="relative w-full h-[500px] bg-gray-900 rounded-lg overflow-hidden">
                 <Image
                   src="/mac-image.avif"
-                  alt="AI Ad Creative Generators"
+                  alt="Marketing Extension Brand Overview"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
@@ -177,26 +177,26 @@ const BlogPage = () => {
               <div className="bg-gray-50 border-l-4 border-orange-500 p-6 mb-8 rounded-r-lg">
                 <h3 className="text-xl font-bold text-black mb-3">TL;DR</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Artificial Intelligence (AI) is adding a powerful edge to every aspect of marketing—and ad creative is no exception. With the proliferation of AI ad creative generators, all promising to squash turnaround times and maximize impact on advertising efforts, how do you even begin to find a tool that&apos;s right for you? Right here, with Superside&apos;s list of the top 10 generators.
+                  Marketing Extension helps businesses drive measurable progress through Growth Marketing-as-a-Service. We combine strategic consulting, on-demand talent, and execution support delivered fast, flexibly, and affordably.
                 </p>
               </div>
 
               {/* Article Content */}
               <div className="space-y-6 text-gray-700 leading-relaxed">
                 <p>
-                  AI ad generators are becoming indispensable artillery in the modern marketer&apos;s toolkit, enabling brands to conceptualize, test and optimize ad accounts with distinctive visual assets and compelling ad copy variations at a pace that leaves traditional methods eating their dust.
+                  Marketing Extension is a consulting and outsourcing partner that helps businesses use marketing to drive meaningful, measurable progress.
                 </p>
 
                 <p>
-                  According to a 2023 survey by McKinsey, organizations that have already embedded AI capabilities are going all in on artificial intelligence, with Marketing and sales being the most reported uses.
+                  We offer strategic direction, build high-performing teams, and execute tailored campaigns through a network of Africa&apos;s top marketing talent.
                 </p>
 
                 <p>
-                  While 2023 was the breakout year for generative AI, 2026 brings scalability in AI technologies for companies & marketing departments. Superside&apos;s AI design services have completed 4000+ AI-powered projects, saving our customers over $14 million and cutting delivery time in half.
+                  Our model, Growth Marketing-as-a-Service (GMaaS), combines consulting, on-demand talent, and execution support delivered fast, flexibly, and affordably.
                 </p>
 
                 <p>
-                  Of course, not all AI ad production capabilities are created equal. Read on to discover the right AI ad creative builder for your business.
+                  This overview outlines our brand voice, visual system, and the standards that keep our work consistent across touchpoints.
                 </p>
               </div>
 
@@ -204,12 +204,12 @@ const BlogPage = () => {
               <div className="mt-12 mb-8">
                 <h3 className="text-2xl font-bold text-black mb-4">IN THIS ARTICLE</h3>
                 <ul className="space-y-2 text-gray-700">
-                  <li>Best practices for creating effective AI-generated ads</li>
-                  <li>10 best AI ad creative generators in 2026</li>
-                  <li>1. Superside</li>
-                  <li>2. AdCreative.ai</li>
-                  <li>3. Narrato</li>
-                  <li>4. InVideo</li>
+                  <li>About Marketing Extension</li>
+                  <li>Growth Marketing-as-a-Service (GMaaS)</li>
+                  <li>Tone of Voice</li>
+                  <li>Tagline</li>
+                  <li>Logo System</li>
+                  <li>Clear Space and Scaling</li>
                 </ul>
               </div>
 
@@ -222,14 +222,14 @@ const BlogPage = () => {
                 className="mt-16 mb-12 scroll-mt-32"
               >
                 <h2 className="text-3xl font-bold text-black mb-6">
-                  Best practices for creating effective AI-generated ads
+                  About Marketing Extension
                 </h2>
                 <div className="space-y-4 text-gray-700 leading-relaxed">
                   <p>
-                    Creating effective AI-generated ads requires a strategic approach. Start by defining clear objectives and understanding your target audience. Use high-quality input prompts that are specific and detailed to get the best results from AI tools.
+                    Marketing Extension is a consulting and outsourcing company that helps businesses use marketing to drive meaningful, measurable progress.
                   </p>
                   <p>
-                    Always review and refine AI-generated content to ensure it aligns with your brand voice and messaging. Test different variations and analyze performance metrics to continuously improve your ad creatives.
+                    We provide strategic direction, build high-performing teams, and execute tailored campaigns through a network of Africa&apos;s top marketing talent. Whether you need short-term support or full-scale leadership, we deliver clarity, people, and execution to help you compete and grow with confidence.
                   </p>
                 </div>
               </section>
@@ -243,10 +243,10 @@ const BlogPage = () => {
                 className="mt-16 mb-12 scroll-mt-32"
               >
                 <h2 className="text-3xl font-bold text-black mb-6">
-                  10 best AI ad creative generators in 2026
+                  Growth Marketing-as-a-Service (GMaaS)
                 </h2>
                 <p className="text-gray-700 leading-relaxed mb-8">
-                  Here are the top AI ad creative generators that are making waves in 2026, each offering unique features and capabilities to help you create compelling ad content.
+                  Marketing Extension is defining a new category: Growth Marketing-as-a-Service. It combines strategic consulting, on-demand talent, and execution support delivered fast, flexibly, and affordably.
                 </p>
               </section>
 
@@ -258,13 +258,13 @@ const BlogPage = () => {
                 }}
                 className="mt-16 mb-12 scroll-mt-32"
               >
-                <h2 className="text-3xl font-bold text-black mb-6">1. Superside</h2>
+                <h2 className="text-3xl font-bold text-black mb-6">Tone of Voice</h2>
                 <div className="space-y-4 text-gray-700 leading-relaxed">
                   <p>
-                    Superside is a leading AI-powered design platform that combines human creativity with AI efficiency. With over 4000+ AI-powered projects completed, Superside has saved customers over $14 million and cut delivery time in half.
+                    Our voice is confident, clear, and fresh. We stay formal without being stiff and casual without being sloppy. We are confident, not cocky.
                   </p>
                   <p>
-                    The platform offers comprehensive ad creative generation, from concept to final execution, with a focus on quality and brand consistency.
+                    We choose words that are corporate and clear, avoiding forced language. The goal is clarity, trust, and momentum.
                   </p>
                 </div>
               </section>
@@ -277,10 +277,13 @@ const BlogPage = () => {
                 }}
                 className="mt-16 mb-12 scroll-mt-32"
               >
-                <h2 className="text-3xl font-bold text-black mb-6">2. AdCreative.ai</h2>
+                <h2 className="text-3xl font-bold text-black mb-6">Tagline</h2>
                 <div className="space-y-4 text-gray-700 leading-relaxed">
                   <p>
-                    AdCreative.ai specializes in generating high-converting ad creatives using advanced AI algorithms. The platform analyzes your brand and creates multiple ad variations optimized for different platforms and audiences.
+                    Let&apos;s Fix Your Marketing. For Real.
+                  </p>
+                  <p>
+                    Use the tagline to reinforce our promise of clarity, execution, and measurable progress.
                   </p>
                 </div>
               </section>
@@ -293,10 +296,13 @@ const BlogPage = () => {
                 }}
                 className="mt-16 mb-12 scroll-mt-32"
               >
-                <h2 className="text-3xl font-bold text-black mb-6">3. Narrato</h2>
+                <h2 className="text-3xl font-bold text-black mb-6">Logo System</h2>
                 <div className="space-y-4 text-gray-700 leading-relaxed">
                   <p>
-                    Narrato offers AI-powered content creation tools that help marketers create engaging ad copy and visuals. The platform focuses on storytelling and narrative-driven ad creatives.
+                    Use the masterbrand logo whenever possible. If the horizontal mark is not viable, the vertical variation can be used instead.
+                  </p>
+                  <p>
+                    Keep the logo intact, legible, and consistent across formats to reinforce recognition.
                   </p>
                 </div>
               </section>
@@ -309,10 +315,13 @@ const BlogPage = () => {
                 }}
                 className="mt-16 mb-12 scroll-mt-32"
               >
-                <h2 className="text-3xl font-bold text-black mb-6">4. InVideo</h2>
+                <h2 className="text-3xl font-bold text-black mb-6">Clear Space and Scaling</h2>
                 <div className="space-y-4 text-gray-700 leading-relaxed">
                   <p>
-                    InVideo is a powerful video ad creation platform that uses AI to help you create professional video ads quickly. The platform offers templates, automated editing, and AI-powered suggestions for better engagement.
+                    Maintain clear space around the logo for instant recognition and readability. Avoid clutter and preserve visual balance.
+                  </p>
+                  <p>
+                    Scale the logo proportionately across sizes and mediums to maintain its integrity.
                   </p>
                 </div>
               </section>
@@ -325,10 +334,13 @@ const BlogPage = () => {
                 }}
                 className="mt-16 mb-12 scroll-mt-32"
               >
-                <h2 className="text-3xl font-bold text-black mb-6">5. Creaty</h2>
+                <h2 className="text-3xl font-bold text-black mb-6">Color Palette</h2>
                 <div className="space-y-4 text-gray-700 leading-relaxed">
                   <p>
-                    Creaty provides AI-driven creative solutions for digital advertising, focusing on visual ad creation and optimization across multiple channels.
+                    Our palette pairs sophisticated greys with vibrant orange and brown accents to express audacity and boldness.
+                  </p>
+                  <p>
+                    Use the core colors consistently across materials to build recognition and cohesion.
                   </p>
                 </div>
               </section>
@@ -341,10 +353,13 @@ const BlogPage = () => {
                 }}
                 className="mt-16 mb-12 scroll-mt-32"
               >
-                <h2 className="text-3xl font-bold text-black mb-6">6. Recreate</h2>
+                <h2 className="text-3xl font-bold text-black mb-6">Typography</h2>
                 <div className="space-y-4 text-gray-700 leading-relaxed">
                   <p>
-                    Recreate uses AI to transform existing content into new ad creatives, helping brands repurpose their assets efficiently while maintaining brand consistency.
+                    Neue Kabel is our primary typeface and Windsor Pro is the secondary face. Typography hierarchy guides attention and improves readability.
+                  </p>
+                  <p>
+                    Use font weights and sizes consistently to reinforce clarity and professionalism.
                   </p>
                 </div>
               </section>
@@ -357,10 +372,10 @@ const BlogPage = () => {
                 }}
                 className="mt-16 mb-12 scroll-mt-32"
               >
-                <h2 className="text-3xl font-bold text-black mb-6">7. Pencil</h2>
+                <h2 className="text-3xl font-bold text-black mb-6">Iconography</h2>
                 <div className="space-y-4 text-gray-700 leading-relaxed">
                   <p>
-                    Pencil offers AI-powered ad creation with a focus on performance optimization. The platform generates multiple ad variations and tests them to find the best-performing creatives.
+                    Icons should be simple, consistent, and easy to recognize. They help communicate quickly and reinforce the brand system across touchpoints.
                   </p>
                 </div>
               </section>
@@ -373,10 +388,10 @@ const BlogPage = () => {
                 }}
                 className="mt-16 mb-12 scroll-mt-32"
               >
-                <h2 className="text-3xl font-bold text-black mb-6">8. Adflow by Pixlet</h2>
+                <h2 className="text-3xl font-bold text-black mb-6">Stationery</h2>
                 <div className="space-y-4 text-gray-700 leading-relaxed">
                   <p>
-                    Adflow by Pixlet provides automated ad creation workflows, helping teams scale their ad production while maintaining quality and brand standards.
+                    Business cards and stationery follow the core logo, color, and typography rules to ensure consistency across physical touchpoints.
                   </p>
                 </div>
               </section>
@@ -389,10 +404,13 @@ const BlogPage = () => {
                 }}
                 className="mt-16 mb-12 scroll-mt-32"
               >
-                <h2 className="text-3xl font-bold text-black mb-6">9. Predis</h2>
+                <h2 className="text-3xl font-bold text-black mb-6">Media Identity</h2>
                 <div className="space-y-4 text-gray-700 leading-relaxed">
                   <p>
-                    Predis leverages AI to create predictive ad creatives that are optimized for future performance, using data-driven insights to inform creative decisions.
+                    Social templates, favicons, and digital assets should use the logo and color palette consistently to strengthen recognition.
+                  </p>
+                  <p>
+                    Keep layouts clean and clear to reflect our confident, corporate tone.
                   </p>
                 </div>
               </section>
@@ -405,10 +423,10 @@ const BlogPage = () => {
                 }}
                 className="mt-16 mb-12 scroll-mt-32"
               >
-                <h2 className="text-3xl font-bold text-black mb-6">10. Quickads</h2>
+                <h2 className="text-3xl font-bold text-black mb-6">Patterns and Brand Elements</h2>
                 <div className="space-y-4 text-gray-700 leading-relaxed">
                   <p>
-                    Quickads focuses on speed and efficiency, using AI to generate ad creatives in minutes. The platform is ideal for teams that need to create multiple ad variations quickly.
+                    Use approved patterns and brand elements to add texture and consistency across materials without overpowering the message.
                   </p>
                 </div>
               </section>
@@ -424,15 +442,15 @@ const BlogPage = () => {
                 <h2 className="text-3xl font-bold text-black mb-6">FAQs</h2>
                 <div className="space-y-6 text-gray-700 leading-relaxed">
                   <div>
-                    <h3 className="font-semibold text-black mb-2">What are AI ad creative generators?</h3>
+                    <h3 className="font-semibold text-black mb-2">What is Growth Marketing-as-a-Service (GMaaS)?</h3>
                     <p>
-                      AI ad creative generators are tools that use artificial intelligence to create advertising content, including visuals, copy, and video ads, helping marketers produce content faster and more efficiently.
+                      GMaaS is our hybrid model that combines strategic consulting, on-demand talent, and execution support delivered fast, flexibly, and affordably.
                     </p>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-black mb-2">How do I choose the right AI ad generator?</h3>
+                    <h3 className="font-semibold text-black mb-2">How should we use the Marketing Extension logo?</h3>
                     <p>
-                      Consider factors such as your specific needs, budget, integration capabilities, and the quality of output. Evaluate each tool&apos;s features, pricing, and customer reviews to find the best fit for your business.
+                      Use the masterbrand logo whenever possible, preserve clear space, and avoid distortion or color changes. Keep the mark legible and consistent across formats.
                     </p>
                   </div>
                 </div>
@@ -447,21 +465,21 @@ const BlogPage = () => {
                 <div className="relative w-full h-48 bg-gray-700 rounded-lg overflow-hidden mb-4">
                   <Image
                     src="/mac-image.avif"
-                    alt="AI Excellence"
+                    alt="Marketing Extension"
                     fill
                     className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 25vw"
                   />
                 </div>
                 <h3 className="text-white text-xl font-bold mb-2">
-                  Notice the brilliance
+                  Need clarity in marketing?
                 </h3>
                 <p className="text-white/90 text-lg mb-6">
-                  Discover the speed
+                  Strategy, talent, and execution delivered fast.
                 </p>
               </div>
               <button className="w-full bg-[#4caf50] hover:bg-[#45a049] text-white font-semibold py-4 px-6 rounded-lg transition-colors duration-300">
-                Achieve AI excellence
+                Start a strategy call
               </button>
             </div>
           </aside>
@@ -472,4 +490,3 @@ const BlogPage = () => {
 };
 
 export default BlogPage;
-

@@ -8,6 +8,7 @@ import {
   inter,
   instrumentSerif,
 } from "./fonts";
+import ContactSection from "@/components/contact-section";
 
 
 export const metadata: Metadata = {
@@ -28,8 +29,9 @@ export default function RootLayout({
       <body className="antialiased">
         <HeaderWrapper />
         {children}
+        <ContactSection />
         <footer>
-        <HeroFooter backgroundUrl="/footer.avif" />
+        <HeroFooter  />
         </footer>
       </body>
     </html>

@@ -15,14 +15,17 @@ const OurWork = () => {
         </h1>
         <div className="space-y-6 text-center">
           <p className="text-black/80 text-[30px] md:text-4xl font-display font-bold leading-tight">
-            We don&apos;t just run campaigns—we build marketing engines
+            We build marketing systems that drive measurable progress
+          </p>
+          {/* <p className="text-black/90 text-[16px] md:text-lg leading-relaxed max-w-3xl mx-auto">
+            Marketing Extension is a consulting and outsourcing company that helps businesses use marketing to drive meaningful, measurable progress.
           </p>
           <p className="text-black/90 text-[16px] md:text-lg leading-relaxed max-w-3xl mx-auto">
-            At Marketing Extension, we don&apos;t just run campaigns—we build marketing engines. Across Africa and beyond, we partner with ambitious organisations to design, run, and scale marketing systems that deliver measurable outcomes.
+            We provide strategic direction, build high-performing teams, and execute tailored campaigns through a network of Africa&apos;s top marketing talent.
           </p>
           <p className="text-black/90 text-[16px] md:text-lg leading-relaxed max-w-3xl mx-auto">
-            Our work combines strategy, creative, and technology into one coherent operating model, embedded within our clients&apos; teams. Every engagement is tailored to the client&apos;s stage, market, and ambition—whether it&apos;s launching a fintech, scaling a multi-country payments company, or helping global entrants succeed in Africa.
-          </p>
+            Whether you need short-term support or full-scale leadership, we deliver clarity, people, and execution to help you compete and grow with confidence.
+          </p> */}
         </div>
         <ImpactStatsRow />
       </div>
@@ -38,7 +41,7 @@ const OurWork = () => {
       </div>
 
       {/* What Sets Our Work Apart */}
-      <div className="px-6 max-w-6xl mx-auto py-20">
+      {/* <div className="px-6 max-w-6xl mx-auto py-20">
         <h2 className="text-3xl md:text-4xl font-display font-bold text-center mb-16 text-text-dark">
           What Sets Our Work Apart
         </h2>
@@ -115,7 +118,7 @@ const OurWork = () => {
             </div>
           </motion.div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

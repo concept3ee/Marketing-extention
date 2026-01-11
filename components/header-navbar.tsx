@@ -6,10 +6,10 @@ import { ChevronRight, Menu, X, ArrowRight, ExternalLink } from 'lucide-react';
 
 interface HeaderProps {
   onNavigate?: (page: 'home' | 'technology') => void;
-  currentPage: 'home' | 'technology';
+  headerTone?: 'light' | 'dark';
 }
 
-const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage }) => {
+const Header: React.FC<HeaderProps> = ({ onNavigate, headerTone = 'dark' }) => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
@@ -35,9 +35,8 @@ const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage }) => {
     setMobileMenuOpen(false);
   };
 
-  // Logic: Home starts dark, Technology starts light. 
-  // We need dark text on light backgrounds (scrolled OR tech page)
-  const isLightMode = scrolled || activeMenu || currentPage === 'technology';
+  // We need dark text on light backgrounds (scrolled OR light-toned pages)
+  const isLightMode = scrolled || activeMenu || headerTone === 'light';
   const textColor = isLightMode ? 'text-text-dark' : 'text-white';
   const headerBg = (scrolled || activeMenu) ? 'bg-bg-light shadow-sm py-4' : 'bg-transparent py-6';
 
@@ -322,7 +321,7 @@ const ResourcesMega = () => {
     { label: 'Guides', desc: 'Playbooks from leaders', href: '/guides' },
     { label: 'Reports', desc: 'Data for smarter decisions', href: '/reports' },
     { label: 'Video Library', desc: 'Deep dives and breakdowns', href: '/video' },
-    { label: 'Playbooks', desc: 'Hands-on frameworks', href: '/playbook' },
+    { label: 'Playbooks', desc: 'Hands-on frameworks', href: '/play-book' },
   ];
 
   return (

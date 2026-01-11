@@ -5,23 +5,23 @@ import React from "react";
 const Guide = () => {
   const guides: GuideItem[] = [
     {
-      id: "shift-happens",
-      title: "Shift Happens Survival Guide",
+      id: "gmaas-briefing",
+      title: "GMaaS Briefing",
       description:
-        "AI was meant to be the solution. So why are so many of us stuck in survival mode? This is your team's guide to…",
+        "A short session on Growth Marketing-as-a-Service and how it helps teams move faster.",
       imageSrc: "/mac-image.avif",
       href: "#",
-      meta: "GUIDE",
+      meta: "VIDEO",
     },
     {
-      id: "partnerships",
-      title: "Inside Great Creative Partnerships",
+      id: "extension-pod",
+      title: "Building the Marketing Extension Pod",
       description:
-        "The secret to great creative? Great partnerships. Tap into the minds of 22 top creative and marketing leaders as they…",
+        "How to structure on-demand talent, workflows, and reporting for measurable progress.",
       imageSrc: "/mac-image.avif",
       href: "#",
-      meta: "GUIDE",
-      pill: "Get the guide",
+      meta: "VIDEO",
+      pill: "Watch now",
     },
     // add more...
   ];
@@ -32,13 +32,13 @@ const Guide = () => {
           Video Library
         </h1>
         <p className="text-black/80 text-[20px] text-center font-medium leading-7">
-          Learn Through Video
+          Learn from the Marketing Extension team
         </p>
-        <p className="text-black/90 text-center text-[16px] font-medium">
-          Latest insights, talks, and tutorials in visual format.
+        <p className="text-black/90 text-center text-[25px] font-medium">
+          Practical sessions on strategy, talent, and execution.
         </p>
         <p className="text-black/80 text-center text-[14px] font-normal max-w-3xl mx-auto mt-4">
-          Access a curated library of videos from Marketing Extension experts. From tutorials to deep dives, these resources show how marketing engines are built and run in real-world contexts.
+          Access a curated library of talks and tutorials on Growth Marketing-as-a-Service, built for teams that want measurable progress.
         </p>
       </div>
       {/* <SplitFeatureCards
@@ -46,31 +46,31 @@ const Guide = () => {
           imageSrc: "/mac-image.avif",
           headline: (
             <div className="font-serif italic text-[#c7e48a] text-[64px] leading-[0.9]">
-              Shift <br />
+              Growth <br />
               <span className="not-italic font-normal text-[#c7e48a]">
-                Happens
+                Marketing
               </span>
             </div>
           ),
-          linkTitle: "Shift Happens Survival Guide",
+          linkTitle: "GMaaS Launch Guide",
           linkHref: "#",
           description:
-            "AI was meant to be the solution. So why are so many of us stuck in survival mode? This is your team's guide to navigating AI expectations, adoption,…",
+            "A clear guide to strategy, team setup, and execution that drives measurable progress.",
           bottomTheme: "dark",
         }}
         right={{
           imageSrc: "/mac-image.avif",
           blurImage: true,
-          linkTitle: "Inside Great Creative Partnerships",
+          linkTitle: "Marketing Extension Pod Playbook",
           linkHref: "#",
           description:
-            "The secret to great creative? Great partnerships. Tap into the minds of 22 top creative and marketing leaders as they tackle big questions, together.",
+            "How to structure on-demand talent, workflows, and reporting for fast, flexible delivery.",
           bottomTheme: "dark",
         }}
       /> */}
 
       {/* Key Features Section */}
-      <div className=" py-20 px-8">
+      {/* <div className=" py-20 px-8">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-[32px] md:text-[40px] font-bold text-center text-black mb-4 animate-fade-in">
             Key Features
@@ -108,9 +108,9 @@ const Guide = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="p-20">
+      <div className="">
       <GuidesGrid items={guides} />
       </div>
     </div>

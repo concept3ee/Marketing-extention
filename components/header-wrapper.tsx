@@ -7,8 +7,14 @@ export default function HeaderWrapper() {
   const pathname = usePathname();
   const router = useRouter();
 
-  // Map pathname to currentPage prop
-  const currentPage = pathname === '/our-technology' ? 'technology' : 'home';
+  const darkHeaderRoutes = new Set([
+    '/',
+    '/event',
+    '/ai-excellence',
+    '/our-creative-talent',
+    '/contact-us',
+  ]);
+  const headerTone = darkHeaderRoutes.has(pathname) ? 'dark' : 'light';
 
   // Handle navigation
   const handleNavigate = (page: 'home' | 'technology') => {
@@ -19,6 +25,5 @@ export default function HeaderWrapper() {
     }
   };
 
-  return <Header currentPage={currentPage} onNavigate={handleNavigate} />;
+  return <Header headerTone={headerTone} onNavigate={handleNavigate} />;
 }
-

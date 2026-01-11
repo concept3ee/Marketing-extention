@@ -20,12 +20,12 @@ export default function ContactUs() {
     <div className="w-full min-h-screen bg-black pt-28 flex flex-col gap-5">
       <div className="space-y-2 px-7">
         <p className="text-[#e5e5e5] text-[20px] font-medium">
-          We turn bold ideas into successful products
+          We help businesses grow smarter with clear marketing direction
         </p>
         <p className="text-white text-[40px] font-bold">
-          Got an idea?
+          Let&apos;s Fix Your Marketing.
           <br />
-          Let&apos;s talk!
+          For Real.
         </p>
       </div>
       <div className="w-full border-[#e5e5e5] border-b" />
@@ -34,7 +34,7 @@ export default function ContactUs() {
         <div className="w-[2px] bg-[#e5e5e5] mx-5"/>
         <div className="flex flex-col gap-6">
           <p className="text-white text-[20px] font-medium">
-            Have a project to discuss?
+            Ready to talk about growth?
           </p>
           
           {/* Contact Card */}

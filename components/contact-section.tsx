@@ -1,4 +1,4 @@
-
+"use client";
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, CheckCircle, Mail, Linkedin, Copy } from 'lucide-react';
@@ -19,7 +19,7 @@ const ContactSection: React.FC = () => {
           <p className="text-white/40 text-xs font-bold uppercase tracking-widest mb-6">Contact Us</p>
           <h2 className="text-4xl md:text-6xl font-display font-bold leading-tight text-white">
             Have a growth challenge? <br />
-            <span className="text-primary">Let's talk about it.</span>
+            <span className="text-primary">Let&lsquo;s talk about it.</span>
           </h2>
         </div>
 
@@ -78,7 +78,7 @@ const ContactSection: React.FC = () => {
                   <CheckCircle size={40} className="text-white" />
                 </div>
                 <h3 className="text-3xl font-display font-bold text-white mb-4">Message Received!</h3>
-                <p className="text-xl text-white/60 mb-10">We'll get back to you within 24 hours to schedule your strategy audit.</p>
+                <p className="text-xl text-white/60 mb-10">We&lsquo;ll get back to you within 24 hours to schedule your strategy audit.</p>
                 <button className="bg-white text-text-dark px-8 py-4 rounded-full font-bold flex items-center justify-center gap-2 mx-auto hover:bg-primary hover:text-white transition-all">
                   Schedule on Calendly instead
                   <ArrowRight size={20} />

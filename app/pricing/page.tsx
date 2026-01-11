@@ -12,10 +12,10 @@ const Pricing = () => {
     <div className="bg-white h-full py-4 flex flex-col">
       <div className="pt-28 space-y-2">
         <h1 className="text-center text-black/80 text-[15px] font-bold ">
-          pricing model
+          engagement model
         </h1>
         <p className="text-center text-black/80 text-[30px] font-medium leading-7">
-          A subscription built to fuel <br /> your growth
+          Flexible support built for <br /> measurable growth
         </p>
       </div>
       <div className=" flex justify-center items-center pt-16 gap-5">
@@ -24,17 +24,16 @@ const Pricing = () => {
           style={{ backgroundImage: "url(/flower.jpg)" }}
         >
           <p className="text-[30px] font-medium  text-black text-center">
-            Flexible plans
+            Flexible support
             <br />
             for every business
           </p>
           <p className="text-black w-full text-[16px] font-medium text-center">
-            From basic asset production and motion graphics to video ads and
-            brand strategy, a Superside subscription lets you choose how you
-            want to use your budget every month based on your business needs.
+            From strategic direction to on-demand talent and tailored campaign
+            execution, choose the support that fits your stage and goals.
           </p>
           <button className="px-4 py-3 rounded-full  bg-black cursor-pointer text-white mt-auto">
-            View Plans
+            View options
           </button>
         </div>
         <IncludedInAllPlans />
@@ -45,16 +44,16 @@ const Pricing = () => {
       <div className="bg-[#121818] w-full p-9 space-y-5">
         <div className="space-y-2  my-5">
           <p className="text-white text-[16px] font-medium ">
-            easy & hassle-free
+            fast, flexible, and affordable
           </p>
           <div className="flex  gap-2 justify-between items-center">
             <p className="text-white text-[30px] font-medium leading-7">
-              One subscription for access to all
-              <br /> our creative services
+              One engagement model for
+              <br /> strategy, talent, and execution
             </p>
             <p>
-              No matter your creative need, creating and
-              <br /> submitting a project is easy and effortless.
+              Get the right people at the right time,
+              <br /> with clear outcomes and accountability.
             </p>
           </div>
         </div>
@@ -119,7 +118,7 @@ const Pricing = () => {
             Save up to 70% on production costs
           </p>
           <p className="text-white text-[16px] font-medium my-3">Through AI, customers like Amazon, Reddit, and Salesforce managed to spend less<br/> than half of what they normally would on similar projects.</p>
-          <button className="border cursor-pointer border-white p-1 text-[10px] rounded-[20px] w-[90px] text-center whitespace-nowrap">
+          <button className=" cursor-pointer p-1 text-[10px] rounded-[20px] w-[90px] bg-green-500 text-white text-center whitespace-nowrap">
            Book a demo
           </button>
         </div>

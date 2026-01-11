@@ -12,8 +12,8 @@ const OurTechnology = () => {
     <div className='bg-white h-full pt-20 flex flex-col gap-5'>
         <div className='space-y-6 pt-12 px-8 w-full'>
             <h1 className='text-black/80 text-[15px] font-medium text-center uppercase tracking-widest  font-inter-tight'>Our Technology</h1>
-            <p className='text-black/80 text-[30px] md:text-4xl text-center font-display font-bold leading-tight'>The Systems Powering Your Creative Edge</p>
-            <p className='text-black/90 text-center text-[16px] md:text-lg font-medium leading-relaxed'>Our technology connects people, processes, and creativity into a fully measurable marketing engine.</p>
+            <p className='text-black/80 text-[30px] md:text-4xl text-center font-display font-bold leading-tight'>The system behind Growth Marketing-as-a-Service</p>
+            <p className='text-black/90 text-center text-[16px] md:text-lg font-medium leading-relaxed'>We connect strategy, on-demand talent, and execution with tools that keep work visible, measurable, and fast.</p>
             
             {/* Capabilities Section */}
             {/* <div className="py-12">
@@ -69,7 +69,7 @@ const OurTechnology = () => {
           italicTitle: "better one",
           lead: "Endless email threads. Scattered feedback. Files lost in a black hole. Sound familiar?",
           body:
-            "Working with creative partners should speed you up, not slow you down. Superspace is a centralized hub for your projects, assets, and subscription details.",
+            "Working with marketing partners should speed you up, not slow you down. Marketing Extension provides a centralized workspace for strategy, talent, and execution.",
           ctaText: "Book a demo",
           ctaHref: "#",
         }}
@@ -78,9 +78,9 @@ const OurTechnology = () => {
           title: "The platform",
           italicTitle: "built for creative teams like yours",
           lead:
-            "Superspace is the engine behind every Superside project. It's built exclusively for our customers to streamline creative collaboration and execution.",
+            "Marketing Extension workspace is the engine behind every engagement. It is built to streamline collaboration, approvals, and delivery.",
           body:
-            "Use it to brief projects, track progress, manage feedback, and integrate it with your existing workflows for seamless, stress-free collaboration.",
+            "Use it to brief projects, track progress, manage feedback, and integrate it with your existing workflows for seamless collaboration.",
           ctaText: "Book a demo",
           ctaHref: "#",
         }}

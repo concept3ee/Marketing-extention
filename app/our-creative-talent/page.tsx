@@ -26,15 +26,15 @@ const CreativeTalent = () => {
         }}
       >
         <div className="pt-16 space-y-3">
-          <h1 className="text-white text-[15px] font-semibold uppercase tracking-widest">Our Creative Talents</h1>
+          <h1 className="text-white text-[15px] font-semibold uppercase tracking-widest">Our Creative Talent</h1>
           <p className="text-white text-[30px] font-semibold leading-7">
-            The People Powering Your Marketing Engine
+            The people behind Growth Marketing-as-a-Service
           </p>
           <p className="text-white text-[16px] font-medium">
-            Our dedicated team of strategists, creatives, and technologists becomes an extension of your<br/> business. Every engagement is grounded in clarity, discipline, and measurable outcomes.
+            We build high-performing teams through a network of Africa&apos;s top marketing talent.<br/>Every engagement delivers clarity, accountability, and measurable progress.
           </p>
-          <button className="bg-green-500 px-3 text-white py-2 w-[10%] text-[15px] rounded-full">
-            Book a demo
+          <button className="bg-green-500 px-4 text-white py-2 w-fit text-[15px] rounded-full">
+            Book a strategy call
           </button>
         </div>
       </div>
@@ -43,7 +43,7 @@ const CreativeTalent = () => {
           Global Bench
         </p>
         <p className="text-black text-[21px] font-medium text-center">
-          
+          On-demand specialists matched to your goals, stage, and market.
         </p>
         
         <ProofTiles />

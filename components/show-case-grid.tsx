@@ -182,7 +182,7 @@ export default function SuperspaceShowcaseGrid() {
             {/* Replace with your real image */}
             <div
               className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: "url(/images/mountains.jpg)" }}
+              style={{ backgroundImage: "url(/world-class.avif)" }}
             />
             <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/40" />
 
@@ -210,7 +210,7 @@ export default function SuperspaceShowcaseGrid() {
             {/* Replace with your real image */}
             <div
               className="absolute inset-0 bg-cover bg-center"
-              style={{ backgroundImage: "url(/images/phone-hand.jpg)" }}
+              style={{ backgroundImage: "url(/workflow.avif)" }}
             />
             <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/25 to-black/65" />
 
@@ -252,7 +252,7 @@ export default function SuperspaceShowcaseGrid() {
             {/* textured / photo-ish background */}
             <div
               className="absolute inset-0 bg-cover bg-center opacity-95"
-              style={{ backgroundImage: "url(/images/green-texture.jpg)" }}
+              style={{ backgroundImage: "url(/bg-image.avif)" }}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/35 to-transparent" />
 

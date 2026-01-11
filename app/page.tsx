@@ -28,7 +28,7 @@ export default function Home() {
    <WhyChooseUs />
    <Testimonials />
    <Awards />
-   <ContactSection />
+   
     </div>
   );
 }
